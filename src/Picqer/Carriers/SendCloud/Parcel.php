@@ -37,6 +37,7 @@ class Parcel extends Model
     protected $fillable = [
         'id',
         'address',
+        'house_number',
         'address_2',
         'address_divided',
         'city',
@@ -60,6 +61,8 @@ class Parcel extends Model
         'order_number',
         'insured_value',
         'total_insured_value',
+        'total_order_value',
+        'total_order_value_currency',
         'to_state',
         'customs_invoice_nr',
         'customs_shipment_type',
@@ -79,6 +82,10 @@ class Parcel extends Model
         'currency',
         'carrier',
         'tracking_url',
+        'request_label',
+        'request_label_async',
+        'apply_shipping_rules',
+        'shipping_method_checkout_name',
         'requestShipment', // Special one to create new shipments
     ];
 
